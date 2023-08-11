@@ -235,9 +235,8 @@ namespace DataGridViewApp
 
           private void btnFolderBrowse_Click(object sender, EventArgs e)
           {
-              dataGridView1.Rows.Clear();
               var folderBrowserDialog = new FolderBrowserDialog();
-              Icon folderIcon = new Icon(@"C:\Users\OpenAI\source\repos\DataGridViewApp\folder_icon.ico");
+              Icon folderIcon = new Icon(@"C:\Users\Administrator\source\repos\DataGridViewApp\folder_icon.ico");
               if (folderBrowserDialog.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog.SelectedPath))
               {
                   string folderPath = folderBrowserDialog.SelectedPath;
